@@ -11,18 +11,17 @@
          list-style: none;
          a{
             &:hover{
+               box-shadow: $shadow;
                background-color: $bg-col;
                color: $text-col;
             }
-            text-decoration: none;
-            padding: 10px 20px; 
-           font-family: Lato;
-           font-size: 14px;
-           line-height: 1.2;
-           font-weight: 400;
-           text-transform: uppercase;
-           border-radius: 3px;
-            color: #868686;
+            a{
+               transition: 0.2s;                            
+               font-size: 12px;
+               color: $head-f-col;
+               &:hover {
+                   @include button(10px 20px, 12px);
+               }
          }
       }
    }
